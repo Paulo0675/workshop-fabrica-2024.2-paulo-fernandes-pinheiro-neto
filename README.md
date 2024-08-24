@@ -31,8 +31,7 @@ Este projeto é uma aplicação web desenvolvida em Django, com o objetivo de or
 - **models.py**: Define os modelos de dados para tarefas e categorias, contendo as definições das entidades `Todo` (Tarefa) e `Category` (Categoria).
 - **views.py**: Implementa as views baseadas em classe (CBVs) para manipulação de tarefas e categorias.
 - **urls.py**: Configuração das URLs da aplicação.
-- **templates**: Diretório contendo os templates HTML para as páginas de tarefas e categorias.
-- **static**: Diretório para arquivos estáticos como CSS, JavaScript e imagens.
+- **templates**: Diretório contendo os templates HTML para as páginas de tarefas e categorias estilizados com bootstrap.
 - **forms.py**: Define os formulários utilizados na aplicação.
 - **admin.py**: Configurações do Django Admin para gerenciar tarefas e categorias.
 
