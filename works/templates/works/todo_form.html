@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    {% if form.instance.id %}
+        Editar Tarefa
+    {% else %}
+        Nova Tarefa
+    {% endif %}
+{% endblock page_title %}
+
+{% block content %}
+    <h1>{% if form.instance.id %}Editar Tarefa{% else %}Nova Tarefa{% endif %}</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a href="{% url 'todo_list' %}" class="btn btn-danger">Voltar</a>
+    </form>
+    
+{% endblock content %}

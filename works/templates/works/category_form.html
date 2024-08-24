@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    {% if category.id %}
+        Editar Categoria
+    {% else %}
+        Nova Categoria
+    {% endif %}
+{% endblock page_title %}
+
+{% block content %}
+    <h1>{% if category.id %}Editar Categoria{% else %}Nova Categoria{% endif %}</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a href="{% url 'category_list' %}" class="btn btn-danger">Voltar</a>
+    </form>
+{% endblock content %}
