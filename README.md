@@ -5,7 +5,7 @@ Desenvolvido Por:
 
 ---
 
-### README para a branch `main`
+### README `main`
 
 # Projeto de Organização Pessoal de Tarefas
 
